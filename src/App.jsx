@@ -21,6 +21,7 @@ const router = createBrowserRouter([
     path: ":userId",
     element: <User />,
     loader: userLoader,
+    id: "user",
     children: [
       { index: true, element: <Links /> },
       { path: "vods", element: <Vods /> },

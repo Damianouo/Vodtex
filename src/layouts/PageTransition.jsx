@@ -16,6 +16,7 @@ function PageTransition({ children }) {
         initial="hidden"
         animate="visible"
         exit="hidden"
+        className="grid"
         transition={{ type: "tween", duration: 0.2 }}
       >
         {children}

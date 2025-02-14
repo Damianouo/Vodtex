@@ -15,7 +15,7 @@ function User() {
     return <UserSkeleton />;
   }
   return (
-    <div>
+    <div className="grid min-h-screen grid-rows-[auto_1fr] p-4">
       <UserInfo />
       <PageTransition>
         <StableOutlet />
@@ -107,6 +107,18 @@ export function loader() {
       { platform: "youtube", icon: <Youtube />, url: "https://www.youtube.com/Caedrel" },
       { platform: "discord", icon: <Discord />, url: "https://discord.com/invite/caedrel" },
       { platform: "tiktok", icon: <Tiktok />, url: "https://www.tiktok.com/@caedrel" },
+    ],
+    links: [
+      { image: caedrelThumbnail, title: "X", url: "https://x.com/caedrel" },
+      { image: caedrelThumbnail, title: "Instagram", url: "https://www.instagram.com/caedrel" },
+      { title: "Youtube", url: "https://www.youtube.com/Caedrel" },
+      { title: "Caedrel Clips - my second channel", url: "https://www.youtube.com/Caedrel" },
+      {
+        image: caedrelThumbnail,
+        title: "Join Our Discord",
+        url: "https://discord.com/invite/caedrel",
+      },
+      { image: caedrelThumbnail, title: "Tiktok", url: "https://www.tiktok.com/@caedrel" },
     ],
   };
 }
