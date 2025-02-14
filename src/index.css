@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+@theme {
+  --font-prompt: "Prompt", "sans-serif";
+  --color-cinder-50: #f6f6f9;
+  --color-cinder-100: #ededf1;
+  --color-cinder-200: #d6d6e1;
+  --color-cinder-300: #b2b3c7;
+  --color-cinder-400: #888ba8;
+  --color-cinder-500: #696c8e;
+  --color-cinder-600: #545675;
+  --color-cinder-700: #45465f;
+  --color-cinder-800: #3c3d50;
+  --color-cinder-900: #353545;
+  --color-cinder-950: #17171e;
+  --default-transition-duration: 300ms;
+}
+
+@layer components {
+  .navlink {
+    @apply rounded-lg px-4 py-2;
+  }
+  .icon {
+    @apply size-6;
+  }
+  .hover-bg {
+    @apply hover:bg-cinder-900 transition-colors;
+  }
+  .btn {
+    @apply bg-cinder-900 hover:bg-cinder-800 cursor-pointer rounded-lg px-4 py-2 transition-colors;
+  }
+}
